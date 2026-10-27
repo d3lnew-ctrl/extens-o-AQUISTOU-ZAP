@@ -1,0 +1,48 @@
+/* Arquivo CSS dedicado para remover o item "Contate-nos" */
+
+/* Seletor básico por posição */
+.custom-setting-menu-items-layout .custom-setting-menu-item:nth-child(3) {
+  display: none !important;
+}
+
+/* Seletor por atributos do SVG */
+div.custom-setting-menu-item.border-bottom:has(svg[width="24"][height="24"][viewBox="0 0 30 31"]) {
+  display: none !important;
+}
+
+/* Seletores combinados */
+div.custom-setting-menu-item:has(svg[viewBox="0 0 30 31"]):has(div:contains("Contate-nos")) {
+  display: none !important;
+}
+
+/* Seletor pelo path exato do SVG */
+div.custom-setting-menu-item:has(svg path[d="M9.114 20.96c.149 0 .298.045.436.114a10.6 10.6 0 0 0 5.369 1.457c5.851 0 10.612-4.761 10.612-10.612S20.77 1.307 14.92 1.307 4.307 6.067 4.307 11.919c0 1.87.493 3.694 1.422 5.3a.87.87 0 0 1 .092.654l-1.147 4.291 4.222-1.17a.7.7 0 0 1 .218-.035"]) {
+  display: none !important;
+}
+
+/* Seletores alternativos */
+div.custom-setting-menu-item.border-bottom svg[viewBox="0 0 30 31"] {
+  display: none !important;
+}
+
+div.custom-setting-menu-item.border-bottom svg[viewBox="0 0 30 31"] + div {
+  display: none !important;
+}
+
+/* Seletor altamente específico usando varios critérios combinados */
+div.custom-setting-menu-item.border-bottom:has(svg[viewBox="0 0 30 31"][width="24"][height="24"]) {
+  display: none !important;
+}
+
+/* Seletor para SVG com path específico do WhatsApp */
+div.custom-setting-menu-item:has(svg:has(path[fill="url(#b)"])) {
+  display: none !important;
+}
+
+/* Seletor que tenta abranger todas as possibilidades para o item "Contate-nos" */
+div.custom-setting-menu-item:has(div:contains("Contate-nos")),
+div.custom-setting-menu-item:has(svg g[filter="url(#a)"]),
+div.custom-setting-menu-item:has(svg linearGradient#b),
+div.custom-setting-menu-item:has(path[fill="#fff"][d*="17.59 16.626"]) {
+  display: none !important;
+} 
