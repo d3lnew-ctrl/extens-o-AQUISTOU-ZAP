@@ -1,0 +1,423 @@
+/* Tab CRM Perfil */
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #fff;
+  background: #148040 !important;
+  border-color: #148040 !important;
+}
+
+/* cor do icone check*/
+.custom-image-primary-color {
+  fill: #148040 !important;
+}
+
+.ant-radio-inner::after {
+    background-color: #148040 !important;
+}
+.ant-radio-checked .ant-radio-inner {
+    border-color: #148040 !important;
+}
+
+/*cor do switch*/
+.ant-switch-checked {
+  background-color: #148040 !important;
+}
+/* Peso da fonte dos labels */
+.ant-form-item-label>label { 
+  font-weight: 500 !important;
+}
+
+#main_section .main_toolbar .left_tab-side .ant-tabs-tab {border-radius: 5px !important;}
+
+/* Arquivo de substituicao para garantir que a cor #148040 seja substituida por #148040 */
+#main_section .main_toolbar .left_tab-side .top-tabbar-badge-class {
+  background-color: #148040 !important;
+  color: white !important;
+}
+
+/* Regra principal para aba ativa */
+#main_section .main_toolbar .left_tab-side .ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 1px solid #148040 !important;
+  background: #148040 !important;
+  border-color: #148040 !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #148040 !important;
+    text-shadow: 0 0 0.25px #148040 !important;
+}
+
+/* Regra adicional com alta especificidade para garantir aplicação */
+html body #main_section .main_toolbar .left_tab-side .ant-tabs-tab.ant-tabs-tab-active,
+#main_section .main_toolbar .left_tab-side div.ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 1px solid #46459c21 !important;
+  background: #46459c21 !important;
+  border-color: #46459c21 !important;
+  color: white !important;
+}
+
+.ant-btn-primary {
+  background-color: #148040 !important;
+  border-color: #148040 !important;
+}
+
+.ant-btn-primary:hover, 
+.ant-btn-primary:focus {
+  background-color: #333385 !important;
+  border-color: #333385 !important;
+}
+
+/* ocultar menu de configuracao */
+/*.custom-setting-menu-items-layout {
+  display: none !important;
+}*/
+
+/* botao de fechar modal */
+.mbf-ant-modal-close { 
+  background-color: #148040 !important;
+  color: white !important;
+}
+
+.mbf-ant-modal-close:hover { 
+  background-color: #7E29E6 !important;
+  color: white !important;
+}
+
+/* Ocultar icones de tutorial (info-circle) */
+/*span.anticon.anticon-info-circle,
+.anticon-info-circle,
+span[role="img"][aria-label="info-circle"] {
+  display: none !important;
+}*/
+
+/* Corrigir traducoes dos botoes switch */
+.ant-switch-checked .ant-switch-inner {
+  font-size: 0 !important;
+}
+
+.ant-switch-checked .ant-switch-inner::after {
+  content: "ON";
+  font-size: 12px;
+}
+
+.ant-switch:not(.ant-switch-checked) .ant-switch-inner {
+  font-size: 0 !important;
+}
+
+.ant-switch:not(.ant-switch-checked) .ant-switch-inner::after {
+  content: "OFF";
+  font-size: 12px;
+}
+
+/* cor da etapa */
+.ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-icon {
+    background: #148040 !important;
+}
+.ant-steps-item-finish .ant-steps-item-icon {
+    border-color: #148040 !important;
+}
+.ant-steps-item-process .ant-steps-item-icon {
+    border-color: #148040 !important;
+}
+
+/* botão check */
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #148040 !important;
+    border-color: #148040 !important;
+}
+
+/* Ocultar logo no topo da tela de kanban */
+img[src*="chrome-extension"][src$="/images/icon-128.png"],
+img[alt="lotsofcode.in"] {
+  display: none !important;
+}
+.custom-kanba-header {
+  background-color: #f4edff !important;
+  color: black !important;
+}
+
+/* cor do gerador de link */
+.custom-Link-generator-content__body .custom-link-generator-card-section .ant-alert { 
+  background-color: #148040 !important  ;
+  border: 1px solid #148040 !important;
+}
+
+/*Alterações na logo */
+/*.logo {display: none !important;}*/
+/* Alterações na Logo */
+
+/* Estilos modernos para o menu lateral esquerdo */
+.mbf-buttons {
+  background-color: transparent !important;
+}
+
+.mbf-sidebar {
+  border-right: none !important;
+  transition: all 0.3s ease !important;
+  background-color: #FFFFFF !important;
+  color: black !important;
+}
+
+/* Regras mais específicas para o tema escuro */
+html.dark .mbf-sidebar,
+body.dark .mbf-sidebar,
+.dark .mbf-sidebar,
+.mbf-sidebar.dark,
+.web.dark .mbf-sidebar,
+.darkmode .mbf-sidebar,
+._aigs.dark ~ .mbf-sidebar,
+.dark ._aigs + .mbf-sidebar,
+[data-theme="dark"] .mbf-sidebar,
+body[data-theme="dark"] .mbf-sidebar,
+.app.dark .mbf-sidebar,
+._aigs + header .mbf-sidebar {
+  background-color: #1a1a28 !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+  border-right: 1px solid #2d2d3d !important;
+  color: white !important;
+}
+
+/* Verificar classes específicas do WhatsApp para modo escuro */
+[data-theme="dark"] .mbf-sidebar,
+html[data-theme="dark"] .mbf-sidebar,
+body[data-theme="dark"] .mbf-sidebar,
+._aohf div.mbf-sidebar,
+/* Detectar tema escuro através de elementos pais */
+html.dark ~ body .mbf-sidebar,
+body.dark .mbf-sidebar,
+.dark ~ .mbf-sidebar,
+.dark ._aigs .mbf-sidebar,
+._aigs.dark + .mbf-sidebar,
+#app.dark + .mbf-sidebar,
+/* Forçar o estilo do tema escuro específico para WhatsApp Web */
+.web.nightmode .mbf-sidebar,
+.nightmode .mbf-sidebar,
+.dark.theme .mbf-sidebar,
+.dark-theme .mbf-sidebar,
+.darktheme .mbf-sidebar,
+/* Cor de fundo escura específica do WhatsApp Web */
+:root[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar,
+body[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar,
+/* Garantir que a regra seja aplicada */
+.mbf-sidebar.dark {
+  background-color: #1a1a28 !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+  border-right: 1px solid #2d2d3d !important;
+}
+
+/* Usar a mesma abordagem para o logo no tema escuro */
+[data-theme="dark"] .logo,
+html[data-theme="dark"] .logo,
+body[data-theme="dark"] .logo,
+._aohf div.mbf-sidebar .logo,
+html.dark ~ body .mbf-sidebar .logo,
+body.dark .mbf-sidebar .logo,
+.dark ~ .mbf-sidebar .logo,
+.dark ._aigs .mbf-sidebar .logo,
+._aigs.dark + .mbf-sidebar .logo,
+#app.dark + .mbf-sidebar .logo,
+.web.nightmode .mbf-sidebar .logo,
+.nightmode .mbf-sidebar .logo,
+.dark.theme .mbf-sidebar .logo,
+.dark-theme .mbf-sidebar .logo,
+.darktheme .mbf-sidebar .logo,
+:root[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar .logo,
+body[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar .logo,
+.mbf-sidebar.dark .logo {
+  border-bottom: 1px solid #2d2d3d !important;
+  background-color: #20202f !important;
+}
+
+/* Mesmo para a imagem do logo */
+[data-theme="dark"] .logo img,
+html[data-theme="dark"] .logo img,
+body[data-theme="dark"] .logo img,
+._aohf div.mbf-sidebar .logo img,
+html.dark ~ body .mbf-sidebar .logo img,
+body.dark .mbf-sidebar .logo img,
+.dark ~ .mbf-sidebar .logo img,
+.dark ._aigs .mbf-sidebar .logo img,
+._aigs.dark + .mbf-sidebar .logo img,
+#app.dark + .mbf-sidebar .logo img,
+.web.nightmode .mbf-sidebar .logo img,
+.nightmode .mbf-sidebar .logo img,
+.dark.theme .mbf-sidebar .logo img,
+.dark-theme .mbf-sidebar .logo img,
+.darktheme .mbf-sidebar .logo img,
+:root[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar .logo img,
+body[style*="background-color: rgb(30, 30, 30)"] .mbf-sidebar .logo img,
+.mbf-sidebar.dark .logo img {
+  filter: brightness(1.1) !important;
+}
+
+.mbf-buttons .btn-item {
+  margin: 5px auto !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
+  width: 42px !important;
+  height: 42px !important;
+}
+
+.mbf-buttons .btn-item:hover {
+  background-color: #eeeeff !important;
+  transform: translateY(-2px) !important;
+}
+
+.dark .mbf-buttons .btn-item:hover {
+  background-color: #33334d !important;
+}
+
+.mbf-buttons .btn-item .btn-item-img {
+  border-radius: 10px !important;
+}
+
+.mbf-buttons .btn-item .btn-item-img img {
+  filter: grayscale(0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.mbf-buttons .btn-item:hover .btn-item-img img {
+  filter: grayscale(0) !important;
+  transform: scale(1.1) !important;
+}
+
+.mbf-buttons .btn-item .btn-item-info {
+  border-radius: 0 12px 12px 0 !important;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1) !important;
+  border-left: 3px solid #148040 !important;
+  padding-left: 12px !important;
+}
+
+.dark .mbf-buttons .btn-item .btn-item-info {
+  background-color: #2d2d3d !important;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+img.wc-user-img {
+  margin-right: 8px !important;
+}
+
+/* Ocultar ícones de calendário do Google e contatos no WhatsApp Web */
+svg[viewBox="0 0 100 100"],
+svg[width="40"][height="40"][viewBox="0 0 100 100"],
+div.d-flex.gap-sm.align-items-center svg[viewBox="0 0 100 100"],
+/* Ícone do calendário */
+svg[width="40"][height="40"][viewBox="0 0 100 100"] + div,
+/* Ícone boneco/contatos */
+svg[width="30"][height="30"][viewBox="0 0 48 48"],
+svg[viewBox="0 0 48 48"],
+div[style="cursor: pointer;"] svg[viewBox="0 0 48 48"] {
+  display: none !important;
+}
+
+/* Licença */
+.mbf_button {
+  background: #148040 !important;
+}
+.carousel-container .carousel-btn {
+  background-color: #148040 !important;
+  color: white !important;
+}
+.subscription_header {
+  background-color: #148040 !important;
+}
+.toggle-container::before { 
+  background: #148040 !important;
+}
+.subscription_footer {
+    background: #46459e36 !important;
+}
+
+/* Cor da Borda */
+.ant-dropdown-menu-item-selected, .ant-dropdown-menu-submenu-title-selected {
+    color: #148040 !important;  
+}
+
+:root {
+/* branding variable - light */
+--custom-primary-color: #148040 !important;
+--custom-plan-purchase-border: #148040 !important;
+
+/* branding variable - dark */
+--custom-primary-color-dark: #148040 !important;
+--custom-plan-purchase-bg-dark: #148040 !important;
+--custom-plan-purchase-border-dark: #148040 !important;
+}
+
+/* Estilos para garantir que a barra lateral fique escura no tema escuro */
+@media (prefers-color-scheme: dark) {
+  .mbf-sidebar,
+  .mbf-sidebar * {
+    background-color: #1a1a28 !important;
+    color: white !important;
+  }
+  
+  .mbf-sidebar .logo {
+    background-color: #20202f !important;
+    border-bottom: 1px solid #2d2d3d !important;
+  }
+  
+  .mbf-sidebar .logo img {
+    filter: brightness(1.1) !important;
+  }
+  
+  .mbf-sidebar .mbf-buttons {
+    background-color: #1a1a28 !important;
+  }
+  
+  .mbf-sidebar .btn-item:hover {
+    background-color: #33334d !important;
+  }
+}
+
+/* Estilos diretos para a barra lateral no tema escuro */
+.mbf-sidebar {
+  transition: background-color 0.3s ease !important;
+}
+
+/* Regras mais específicas para o tema escuro */
+html[data-theme="dark"] .mbf-sidebar,
+body[data-theme="dark"] .mbf-sidebar,
+.dark .mbf-sidebar,
+.dark ._aigs .mbf-sidebar,
+.mbf-sidebar.dark {
+  background-color: #1a1a28 !important;
+  border-right: 1px solid #2d2d3d !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Estilos diretos para cada elemento no tema escuro */
+html[data-theme="dark"] .mbf-sidebar *,
+body[data-theme="dark"] .mbf-sidebar *,
+.dark .mbf-sidebar *,
+.mbf-sidebar.dark * {
+  color: white !important;
+}
+
+html[data-theme="dark"] .mbf-sidebar .logo,
+body[data-theme="dark"] .mbf-sidebar .logo,
+.dark .mbf-sidebar .logo,
+.mbf-sidebar.dark .logo {
+  background-color: #20202f !important;
+  border-bottom: 1px solid #2d2d3d !important;
+}
+
+html[data-theme="dark"] .mbf-sidebar .logo img,
+body[data-theme="dark"] .mbf-sidebar .logo img,
+.dark .mbf-sidebar .logo img,
+.mbf-sidebar.dark .logo img {
+  filter: brightness(1.1) !important;
+}
+
+html[data-theme="dark"] .mbf-sidebar .mbf-buttons,
+body[data-theme="dark"] .mbf-sidebar .mbf-buttons,
+.dark .mbf-sidebar .mbf-buttons,
+.mbf-sidebar.dark .mbf-buttons {
+  background-color: #1a1a28 !important;
+}
+
+html[data-theme="dark"] .mbf-sidebar .btn-item:hover,
+body[data-theme="dark"] .mbf-sidebar .btn-item:hover,
+.dark .mbf-sidebar .btn-item:hover,
+.mbf-sidebar.dark .btn-item:hover {
+  background-color: #33334d !important;
+}

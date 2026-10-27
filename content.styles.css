@@ -1,0 +1,123 @@
+:root {
+  --theme-green-50: #148040;
+  --theme-green-100: #148040;
+  --theme-white: #fff;
+  --theme-layer-bg: #000000b0;
+}
+
+#global-loader {
+  display: none;
+}
+
+.loader-11 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: var(--theme-white) var(--theme-white) transparent transparent;
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+
+.loader-11:before {
+  width: 32px;
+  height: 32px;
+  border-color: var(--theme-white) var(--theme-white) transparent transparent;
+  -webkit-animation: rotation 1.5s linear infinite;
+  animation: rotation 1.5s linear infinite;
+}
+
+.loader-11:after,
+.loader-11:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent var(--theme-green-100) var(--theme-green-100);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-animation: rotationBack 0.5s linear infinite;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+.loader-11:after {
+  width: 32px;
+  height: 32px;
+  border-color: var(--theme-white) var(--theme-white) transparent transparent;
+  -webkit-animation: rotation 1.5s linear infinite;
+  animation: rotation 1.5s linear infinite;
+}
+
+.loader-text {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 22px;
+  color: var(--theme-white);
+}
+
+.loader-container {
+  text-align: center;
+}
+
+.loader-layer {
+  background-color: var(--theme-layer-bg);
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-btn {
+  font-size: 16px;
+  border-radius: 28px;
+  background-color: var(--theme-green-100);
+  display: inline-block;
+  padding: 13px 28px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.18s background-color ease-in-out;
+}
+
+.loader-btn:hover {
+  background-color: var(--theme-green-50);
+}
+
+.loader-btn-container {
+  display: 'none';
+  justify-content: 'center';
+  align-items: 'center';
+  margin-top: '24px';
+  gap: '10px';
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

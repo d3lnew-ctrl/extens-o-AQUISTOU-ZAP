@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "AG CRM",
+  "version": "1.0.0",
+  "description": "Extensão para integração do WhatsApp com sistemas CRM",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["contentScript.bundle.js", "content-license-check.js", "content-menu-fix.js", "api-connector.js", "color-fix.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon-128.png",
+        "icon-34.png",
+        "images/*",
+        "inject.styles.css"
+      ],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+} 

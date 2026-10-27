@@ -1,0 +1,1 @@
+﻿/* Arquivo de substituição para garantir que a cor #148040 seja substituída por #148040 */
